@@ -1,6 +1,6 @@
 using System;
 
-namespace Books.Models
+namespace Api.Models
 {
     public class BookModel
     {

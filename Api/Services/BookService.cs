@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Books.Models;
+using Api.Models;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 
-namespace Books.Services {
+namespace Api.Services {
     public class BookService {
         private readonly IDistributedCache _dc;
         private readonly RedisOptions _ro;

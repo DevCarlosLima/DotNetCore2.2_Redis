@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 
-namespace Books.Models {
+namespace Api.Models {
     public class RedisOptions {
         public RedisOptions (IConfiguration configuration) {
             SetConfig (configuration);

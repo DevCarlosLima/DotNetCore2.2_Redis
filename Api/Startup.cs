@@ -1,5 +1,5 @@
-﻿using Books.Models;
-using Books.Services;
+﻿using Api.Models;
+using Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace Books
+namespace Api
 {
     public class Startup
     {
@@ -31,7 +31,7 @@ namespace Books
             });
             
             services.AddSwaggerGen (options => {
-                options.SwaggerDoc ("v1", new Info { Version = "v1", Title = "Api" });
+                options.SwaggerDoc ("v1", new Info { Version = "v1", Title = ".Net Core 2.2 and Redis" });
             });
 
             services.AddScoped<BookService>();
